@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Aula 3 - Cores, Imagens e Links">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 3</title>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Cores, Imagens e Links</h1>
+  </header>
+  <main>
+
+    <!-- Cores em HTML -->
+    <section>
+      <h1>Formatos de Cor no CSS:</h1>
+      <h2 style="color: #e6350d;">Título com cor em Hexadecimal</h2>
+      <h2 style="color: rgb(0, 128, 255);">Título com cor em RGB</h2>
+      <h2 style="color: rgba(0, 128, 0, 0.6);">Título com cor em RGBA</h2>
+    </section>
+    <hr>
+
+    <!-- Cor em elemento de texto e fundo do texto -->
+    <section>
+      <p style="color: blue;">Cor em elemento de texto</p>
+      <p style="background-color: blue; color: yellow;">Cor no fundo do texto</p>
+      
+      <!-- Imagem como elemento da página -->
+      <img src="img/mcig.jpg" alt="Teste" title="Teste" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 20px auto;">
+    </section>
+    <hr>
+
+    <!-- Imagem como background -->
+    <section>
+      <div style="border: 1px solid red; width: 500px; height: 500px; color: yellow; text-align: center; background-image: url('img/mcig.jpg'); background-size: cover; background-position: center;">
+        <h2>Imagem como background</h2>
+        <p>Esta seção tem uma imagem de fundo.</p>
+      </div>
+    </section>
+    <!-- Vídeos Locais -->
+    <section>
+      <h1>Vídeos em HTML</h1>
+      <video src="assets/senai.mp4" controls autoplay  loop width="560" height="315" >
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </section>
+    <hr> 
+
+    <!-- Vídeos Externos iframe -->
+     <section>
+      <h1>Vídeos Externos</h1>
+      <iframe src="https://www.youtube.com/embed/jdeGK4fI9xc?si=hLDuEP2znCAyKpc4" title="Vídeo Externo do SENAI" loading="lazy" width="560" height="315">
+      </iframe>
+      <hr>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.886516885734!2d-47.010800424955626!3d-21.47296898028992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7b900119a5539%3A0x86ad0df0bdceb8b6!2sMcDonald&#39;s!5e0!3m2!1spt-BR!2sbr!4v1756924841929!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr> 
+    <hr>
+
+  </main>
+</body>
+</html>
+
