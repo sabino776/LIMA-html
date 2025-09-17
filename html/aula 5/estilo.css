@@ -1,0 +1,40 @@
+/*universal, aplica a todos os elementos*/
+*{
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+.destaque{
+    color:blue;
+    font-weight: bold;
+} 
+
+#titulo-principal{
+    text-align: center; 
+    color: red;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1,h2,h3 {
+    font-family: arial, sans-serif;
+    color:purple;
+}
+
+h4{
+    line-height: 1.5; /*espaço entre linhas*/
+    letter-spacing: 2px; /*espaço entre letras*/
+    word-spacing: 5px; /*espaço entre palavras*/
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+}
