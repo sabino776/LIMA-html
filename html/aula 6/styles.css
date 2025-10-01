@@ -73,3 +73,67 @@ h2 {
 .alinhar-baseline {
   align-items: baseline;
 }
+.alinhar-conteudo {
+  align-content: start;
+  height: 600px;
+}
+.alinhar-conteudo .caixa {
+  flex: 0 0 30%;
+}
+.caixa {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.ordem1 {
+  order: 1;
+}
+.ordem2 {
+  order: 2;
+}
+.ordem3 {
+  order: 3;
+}
+.exemplo-grow . .item-flex {
+  flex-basis: 100px;
+}
+.crescer1 {
+  flex-grow: 1;
+}
+.crescer2 {
+  flex-grow: 2;
+}
+.alinhar-items-individuais .container-flex {
+  height: 300px;
+}
+.self-inicio {
+  align-self: start;
+}
+.self-centro {
+  align-self: center;
+}
+.self-fim {
+  align-self: end;
+}
+.menu-nav {
+  background-color: black;
+  display:flex;
+  gap: 20px;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: purple;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+nav a:hover {
+  background-color: orange;
+}
+@media (max-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
