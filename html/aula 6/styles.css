@@ -94,7 +94,7 @@ h2 {
 .ordem3 {
   order: 3;
 }
-.exemplo-grow . .item-flex {
+.exemplo-grow .item-flex {
   flex-basis: 100px;
 }
 .crescer1 {
