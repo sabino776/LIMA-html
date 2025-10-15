@@ -1,0 +1,168 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Ativição do grid para todos os containers e itens */
+/* 1. Container Grid i Itens Grid */
+.grid-container {
+    display: grid;
+    background-color: #121212;
+    padding: 10px;
+    gap: 10px;
+}
+
+.item-grid {
+    background-color: #3e2f5b;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+}
+
+/* 1. Grid Básico com linhas e Colunas Definidas */
+.basico {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+/* 2. Uso de repeat(), minmax() e fr */
+.repeat-minmax {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    /* 4 colunas com largura minima de 100px (manter proporcao dos itens)*/
+    grid-auto-rows: 100px;
+    gap: 20px;
+}
+
+/* 3. Grid Responsivo com auto-fit e minmax() */
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Ajusta o número de colunas conforme o espaço disponivel */
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+
+/* 4. Grid com Posicionamento de Itens e Sobreposição */
+.sobreposicao {
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
+.item1 {
+    grid-column:  1 / 4; /* Ocupa duas colunas */
+    grid-row: 1 / 3; /* Ocupa duas linhas */
+}
+
+.item2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.item3 {
+    grid-column: 1 / 4;
+}
+
+.item4 {
+    grid-column: 3 / 4;
+}
+
+/* 5. Grid com Areas Nomeadas e Alinhamento */
+.areas-nomeadas {
+    grid-template-areas: 
+     "cabecalho cabecalho"
+     "menu conteudo"
+     "rodape rodape";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #00bcd4;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #9c27b0;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    background-color: #673ab7;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #4caf50;
+}
+
+/* 6. Grid com Grid Aninhado */
+.grid-aninhado {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.subgrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.subitem-grid {
+    background-color: #ff5722;
+    padding: 10px;
+    color: #fff;
+}
+
+/* 7. Layout Completo da Página */
+.layout-pagina {
+    grid-template-areas: 
+      "header header header"
+      "nav main aside"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    height: 500px;
+    background-color: #1e1e1e;
+}
+
+.header {
+    grid-area: header;
+    background-color: #2196f3;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #ff9800;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #ff9800;
+}
+
+.main {
+    grid-area: main;
+    background-color: #3f51b5;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #00bfa5;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplos de CSS Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        margin-top: 40px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+      }
+
+      .grid-container {
+        display: grid;
+        gap: 10px;
+        background-color: #ccc;
+        padding: 10px;
+      }
+
+      .item-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .basico {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .repeat-minmax {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 1. Grid Básico com Linhas e Colunas Definidas -->
+    <section>
+      <h2>Grid Básico com Linhas e Colunas Definidas</h2>
+      <div class="grid-container basico">
+        <div class="item-grid"><img src="https://conteudo.imguol.com.br/c/entretenimento/6d/2025/09/05/buzeira-acumula-154-milhoes-de-seguidores-nas-redes-sociais-1757098660143_v2_300x225.jpg" alt="Buzeira 1" /></div>
+        <div class="item-grid"><img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/07/Buzeira.png?w=1200&h=675&crop=1" alt="Buzeira 2" /></div>
+        <div class="item-grid"><img src="https://uploads.metroimg.com/wp-content/uploads/2025/03/25095111/3-1173.jpg" alt="Buzeira 3" /></div>
+        <div class="item-grid"><img src="https://midias.correio24horas.com.br/2025/07/15/buzeiro-e-seguido-por-mais-de-14-milhoes-de-pessoas-nas-redes-sociais-2815003.jpeg" alt="Buzeira 4" /></div>
+        <div class="item-grid"><img src="https://uploads.metroimg.com/wp-content/uploads/2023/12/27180332/Neymar-Buzeira-Colar-R2-milhoes-1.jpg" alt="Buzeira 5" /></div>
+        <div class="item-grid"><img src="https://uploads.metroimg.com/wp-content/uploads/2025/03/25095111/3-1173.jpg" alt="Buzeira 6" /></div>
+      </div>
+    </section>
+
+    <!-- 2. Uso de repeat(), minmax() e fr -->
+    <section>
+      <h2>Uso de repeat(), minmax() e fr</h2>
+      <div class="grid-container repeat-minmax">
+        <div class="item-grid"><img src="https://conteudo.imguol.com.br/c/entretenimento/6d/2025/09/05/buzeira-acumula-154-milhoes-de-seguidores-nas-redes-sociais-1757098660143_v2_300x225.jpg" alt="Buzeira A" /></div>
+        <div class="item-grid"><img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/07/Buzeira.png?w=1200&h=675&crop=1" alt="Buzeira B" /></div>
+        <div class="item-grid"><img src="https://uploads.metroimg.com/wp-content/uploads/2025/03/25095111/3-1173.jpg" alt="Buzeira C" /></div>
+        <div class="item-grid"><img src="https://midias.correio24horas.com.br/2025/07/15/buzeiro-e-seguido-por-mais-de-14-milhoes-de-pessoas-nas-redes-sociais-2815003.jpeg" alt="Buzeira D" /></div>
+        <div class="item-grid"><img src="https://uploads.metroimg.com/wp-content/uploads/2023/12/27180332/Neymar-Buzeira-Colar-R2-milhoes-1.jpg" alt="Buzeira E" /></div>
+        <div class="item-grid"><img src="https://uploads.metroimg.com/wp-content/uploads/2025/03/25095111/3-1173.jpg" alt="Buzeira F" /></div>
+      </div>
+    </section>
+  </body>
+</html>
+
+
+
+
+    <!-- 3. Grid Responsivo com auto-fit e minmax() -->
+    <section>
+      <h2>Grid Responsivo com auto-fit e minmax()</h2>
+      <div class="grid-container auto-fit">
+        <div class="item-grid">1</div>
+        <div class="item-grid">2</div>
+        <div class="item-grid">3</div>
+        <div class="item-grid">4</div>
+        <div class="item-grid">5</div>
+        <div class="item-grid">6</div>
+        <div class="item-grid">7</div>
+        <div class="item-grid">8</div>
+        <div class="item-grid">9</div>
+        <div class="item-grid">10</div>
+        <div class="item-grid">11</div>
+        <div class="item-grid">12</div>
+      </div>
+    </section>
+
+    <!-- 4. Grid com Posicionamento de Itens e Sobreposição -->
+    <section>
+      <h2>Grid com Posicionamento de Itens e Sobreposição</h2>
+      <div class="grid-container sobreposicao">
+        <div class="item-grid item1">Item 1</div>
+        <div class="item-grid item2">Item 2</div>
+        <div class="item-grid item3">Item 3</div>
+        <div class="item-grid item4">Item 4</div>
+      </div>
+    </section>
+
+    <!-- 5. Grid com Áreas Nomeadas e Alinhamento -->
+    <section>
+      <h2>Grid com Áreas Nomeadas e Alinhamento</h2>
+      <div class="grid-container areas-nomeadas">
+        <div class="item-grid cabecalho">Cabeçalho</div>
+        <div class="item-grid menu">Menu</div>
+        <div class="item-grid conteudo">Conteúdo</div>
+        <div class="item-grid rodape">Rodapé</div>
+      </div>
+    </section>
+
+    <!-- 6. Grid com Grid Aninhado -->
+    <section>
+      <h2>Grid com Grid Aninhado</h2>
+      <div class="grid-container grid-aninhado">
+        <div class="item-grid">
+          <div class="subgrid-container">
+            <div class="subitem-grid">Subitem 1</div>
+            <div class="subitem-grid">Subitem 2</div>
+            <div class="subitem-grid">Subitem 3</div>
+          </div>
+        </div>
+        <div class="item-grid">Item 2</div>
+        <div class="item-grid">Item 3</div>
+        <div class="item-grid">Item 4</div>
+      </div>
+    </section>
+
+    <!-- 7. Exemplo Prático: Layout Completo de Página -->
+    <section>
+      <h2>Exemplo Prático: Layout Completo de Página</h2>
+      <div class="grid-container layout-pagina">
+        <header class="item-grid header">Cabeçalho</header>
+        <nav class="item-grid nav">Navegação</nav>
+        <aside class="item-grid aside">Barra Lateral</aside>
+        <main class="item-grid main">Conteúdo Principal</main>
+        <footer class="item-grid footer">Rodapé</footer>
+      </div>
+    </section>
+  </body>
+</html>
